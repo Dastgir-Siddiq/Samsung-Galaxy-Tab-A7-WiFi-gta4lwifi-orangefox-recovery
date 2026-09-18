@@ -12,6 +12,7 @@ This is an unofficial build of OrangeFox Recovery for the Samsung Galaxy Tab A7 
   - `vbmeta_system`
   - `vendor_boot`
   - `system_ext`
+  - Out-of-the-box **Black theme with Google Blue accent**.
 - Correctly preserved Samsung `SEANDROIDENFORCE` boot signatures to prevent bootloader panics.
 - Included `flash.tar` combo file to easily flash both Recovery and VBMeta disabler simultaneously via Odin/Heimdall, avoiding AVB verification issues.
 
