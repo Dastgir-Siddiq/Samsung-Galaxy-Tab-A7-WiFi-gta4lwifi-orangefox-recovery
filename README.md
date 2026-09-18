@@ -12,21 +12,25 @@ This is an unofficial build of OrangeFox Recovery for the Samsung Galaxy Tab A7 
   - `vbmeta_system`
   - `vendor_boot`
   - `system_ext`
-  - Out-of-the-box **Black theme with Google Blue accent**.
+- Out-of-the-box **Black theme with Google Blue accent**.
 - Correctly preserved Samsung `SEANDROIDENFORCE` boot signatures to prevent bootloader panics.
-- Included `flash.tar` combo file to easily flash both Recovery and VBMeta disabler simultaneously via Odin/Heimdall, avoiding AVB verification issues.
+- Included `Recovery and VBMeta.tar` combo file to easily flash both Recovery and VBMeta disabler simultaneously (via Odin/Heimdall/Brokkr), avoiding AVB verification issues.
 
 ## Installation
 
 ### Prerequisites
 - Samsung Galaxy Tab A7 Wi-Fi (`gta4lwifi`)
 - Unlocked Bootloader (Ensure `OEM LOCK: OFF` and `KG STATUS: NORMAL` or `COMPLETED` in Download Mode)
-- PC with Odin (Windows) or `odin4`/Heimdall (Linux/macOS)
+- Flashing Tool, choose one of the following:
+  - **Brokkr App** for Android/Linux ([GitHub Repository](https://github.com/Gabriel2392/brokkr-flash))
+  - **Odin3** for Windows ([Download from XDA](https://xdaforums.com/t/patched-odin-3-13-1.3762572/))
+  - **odin4** for Linux ([Download from XDA](https://xdaforums.com/t/official-samsung-odin-v4-1-2-1-dc05e3ea-for-linux.4442173/))
+  - **Heimdall** for Linux/macOS ([GitHub Repository](https://github.com/Benjamin-Dobell/Heimdall))
 
-### First-time Installation (via Odin / Download Mode)
+### First-time Installation (via Download Mode)
 1. Boot your tablet into **Download Mode** (Power off, hold Volume Up + Volume Down, and plug in the USB cable).
-2. Open Odin (or `odin4` / Heimdall) on your PC.
-3. Load the `flash.tar` file into the **AP** slot. *(This file contains both the OrangeFox recovery and the vbmeta disabler required to bypass AVB).*
+2. Open your preferred flashing tool (Brokkr, Odin, odin4, or Heimdall).
+3. Load the `Recovery and VBMeta.tar` file into the **AP** slot. *(This file contains both the OrangeFox recovery and the vbmeta disabler required to bypass AVB).*
 4. Start the flash.
 5. As soon as the screen goes black, hold **Power + Volume Up** to force the tablet to boot directly into Recovery Mode. Do not let it boot into Android until you've successfully entered OrangeFox.
 
