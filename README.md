@@ -3,19 +3,6 @@
 ## Introduction
 This is an unofficial build of OrangeFox Recovery for the Samsung Galaxy Tab A7 Wi-Fi (SM-T500 / `gta4lwifi`). It provides advanced recovery features, custom partition flashing, and seamless OTA management.
 
-## Features
-- Full OrangeFox Recovery functionality
-- Up-to-date decryption and file manager features
-- Added options to directly flash `.img` files from the recovery UI to the following partitions:
-  - `dtbo`
-  - `vbmeta`
-  - `vbmeta_system`
-  - `vendor_boot`
-  - `system_ext`
-- Out-of-the-box **Black theme with Google Blue accent**.
-- Correctly preserved Samsung `SEANDROIDENFORCE` boot signatures to prevent bootloader panics.
-- Included `Recovery and VBMeta.tar` combo file to easily flash both Recovery and VBMeta disabler simultaneously (via Odin/Heimdall/Brokkr), avoiding AVB verification issues.
-
 ## Installation
 
 ### Prerequisites
@@ -32,7 +19,7 @@ This is an unofficial build of OrangeFox Recovery for the Samsung Galaxy Tab A7 
 2. Open your preferred flashing tool (Brokkr, Odin, odin4, or Heimdall).
 3. Load the `Recovery and VBMeta.tar` file into the **AP** slot. *(This file contains both the OrangeFox recovery and the vbmeta disabler required to bypass AVB).*
 4. Start the flash.
-5. Done, you can boot into recovery (Ornagfox).
+5. Done, you can boot into recovery (OrangeFox).
 
 ### Updating from an Existing Custom Recovery
 If you already have TWRP or an older version of OrangeFox installed:
